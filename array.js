@@ -97,13 +97,13 @@ function filter5Array(arr){
     }
     return x;
 }
-//console.log(filter5Array([1,7,6,4,3,8,6,4,5]));
+console.log(filter5Array([1,7,6,4,3,8,6,4,5]));
 
 function mergeArrays(arr, arr2){
     let absoluteUnitArr = [...arr,...arr2];
     return absoluteUnitArr.sort((a, b) => a > b);
 }
-//console.log(mergeArrays([1,4,7,11],[2,4,8,10]));
+console.log(mergeArrays([1,4,7,11],[2,4,8,10]));
 
 function productArr(arr){
     let productArr = [];
@@ -114,14 +114,16 @@ function productArr(arr){
     }
     return productArr;
 }
-//console.log(productArr([10,72,3,46]));
+console.log(productArr([10,72,3,46]));
 
 function stringRotation(str1,str2){
     let stringRotations = [];
     for(let i = 0; i < str1.length; i++){
-        stringRotations.push(str1.substring(i,str1.length)+ str1.substring(0,i))
+        stringRotations.push(str1.substring(i,str1.length) + str1.substring(0,i))
     }
     return !!stringRotations.find(x => x===str2);
 }
 console.log(stringRotation('amazon', 'azonma')); //false
 console.log(stringRotation('amazon', 'azonam')); //true
+console.log(stringRotation('amazon', 'zonama')); //true
+console.log(stringRotation('amazon', 'onmaza')); //false
