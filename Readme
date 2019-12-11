@@ -4,3 +4,7 @@
 6,12,3 our code adds additional capacity to the array, to allow it some comfort room when adding more values in the future.
 3)What is the length, capacity, and address of your array?
 3,12,3 our code does not resize down after poping out elements of the array, it simply stays the capacity it once had been.
+4-1)What is the result? Can you explain your result?
+It shows Not a Number, that is due that the memory being assigned is kept as a numbers.
+4-2) What is the purpose of the _resize() function in your Array class?
+When the array runs out of capacity it allocates more memory for the array.

@@ -77,5 +77,14 @@ function main(){
     arr.pop();
     arr.pop();
     console.log(arr);
+    console.log(arr.get(0));
+    arr.remove(2);
+    arr.remove(1);
+    arr.remove(0);
+    arr.push('tauhida')
+    console.log(arr.get(0))
+    console.log(arr);
 }
-main();
+//main();
+
+
