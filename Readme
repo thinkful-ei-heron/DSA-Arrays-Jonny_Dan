@@ -1,0 +1,6 @@
+2-1)What is the length, capacity and memory address of your array?
+1,3,0
+2-2)What is the length, capacity and memory address of your array?
+6,12,3 our code adds additional capacity to the array, to allow it some comfort room when adding more values in the future.
+3)What is the length, capacity, and address of your array?
+3,12,3 our code does not resize down after poping out elements of the array, it simply stays the capacity it once had been.
