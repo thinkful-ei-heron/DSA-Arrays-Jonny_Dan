@@ -88,3 +88,40 @@ function main(){
 //main();
 
 
+function filter5Array(arr){
+    let x = [];
+    for(let obj of arr){
+        if(obj >= 5){
+            x.push(obj)
+        }
+    }
+    return x;
+}
+//console.log(filter5Array([1,7,6,4,3,8,6,4,5]));
+
+function mergeArrays(arr, arr2){
+    let absoluteUnitArr = [...arr,...arr2];
+    return absoluteUnitArr.sort((a, b) => a > b);
+}
+//console.log(mergeArrays([1,4,7,11],[2,4,8,10]));
+
+function productArr(arr){
+    let productArr = [];
+    for(let x of arr){
+        let product = 1;
+        arr.filter(y=> y!==x).forEach(y=> product *= y);
+        productArr.push(product)
+    }
+    return productArr;
+}
+//console.log(productArr([10,72,3,46]));
+
+function stringRotation(str1,str2){
+    let stringRotations = [];
+    for(let i = 0; i < str1.length; i++){
+        stringRotations.push(str1.substring(i,str1.length)+ str1.substring(0,i))
+    }
+    return !!stringRotations.find(x => x===str2);
+}
+console.log(stringRotation('amazon', 'azonma')); //false
+console.log(stringRotation('amazon', 'azonam')); //true
